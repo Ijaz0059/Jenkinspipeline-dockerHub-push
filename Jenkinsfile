@@ -1,7 +1,7 @@
 pipeline {
     agent {label "slave-node"}  ## or write agent any
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('docker-hub-wts')
+    DOCKERHUB_CREDENTIALS = credentials('docker-hub-wts')  ##write the id of security credentials
     }
     stages { 
         stage('SCM Checkout') {
